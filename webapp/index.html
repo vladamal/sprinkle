@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" href="assets/one_up.png"/>
+
+
+        <link rel="stylesheet" href="bower_components/angular-material/layouts/angular-material.layouts.min.css" type="text/css"/> <!--flex?-->
+
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+        <link rel="stylesheet" href="bower_components/angular-material-data-table/dist/md-data-table.css" />
+        <link rel="stylesheet" href="bower_components/angular-gridster/dist/angular-gridster.css" />
+        <!-- endbower -->
+
+        <link rel="stylesheet" href="assets/css/sprinkle.css"/>
+        <link rel="stylesheet" href="assets/css/plantModal.css"/>
+        <link rel="stylesheet" href="assets/css/table.css"/>
+        <link rel="stylesheet" href="assets/css/global.css"/>
+        <!--<link rel="stylesheet" href="assets/css/animation.css"/>-->
+
+        <!-- bower:js -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+        <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.js"></script>
+        <script src="bower_components/angular-material/angular-material.js"></script>
+        <script src="bower_components/angular-translate/angular-translate.js"></script>
+        <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+        <script src="bower_components/angular-material-data-table/dist/md-data-table.js"></script>
+        <script src="bower_components/angular-drag-and-drop-lists/angular-drag-and-drop-lists.js"></script>
+        <script src="bower_components/javascript-detect-element-resize/detect-element-resize.js"></script>
+        <script src="bower_components/angular-gridster/src/angular-gridster.js"></script>
+        <script src="bower_components/lodash/lodash.js"></script>
+        <!-- endbower -->
+
+
+        <!--<script src="dist/sprinkle.js"></script>-->
+
+
+        <script src="src/app.js"></script>
+        <script src="src/app-config/app.run.js"></script>
+        <script src="src/app-config/app.routing.js"></script>
+        <script src="src/app-config/app.config.js"></script>
+        <script src="src/app-config/app.params.js"></script>
+
+        <script src="src/components/user/login/loginController.js"></script>
+        <script src="src/components/user/signup/signupController.js"></script>
+        <script src="src/components/user/profile/profileController.js"></script>
+        <script src="src/components/user/signup/verify/verifyController.js"></script>
+
+        <script src="src/components/header/headerController.js"></script>
+
+        <script src="src/components/home/homeController.js"></script>
+        <script src="src/components/plants/plantsController.js"></script>
+        <script src="src/components/plants/plantsList/plantsListController.js"></script>
+        <script src="src/components/plants/plantsGrid/plantsGridController.js"></script>
+        <script src="src/components/plants/addPlant/addPlantController.js"></script>
+        <script src="src/components/plants/confirm/confirmDialogController.js"></script>
+        <script src="src/components/plants/addGrid/addGridController.js"></script>
+
+        <script src="src/service/serviceRest.js"></script>
+        <script src="src/service/serviceRestResource.js"></script>
+
+        <script src="src/service/serviceGrid.js"></script>
+        <script src="src/service/serviceUser.js"></script>
+        <script src="src/service/servicePlant.js"></script>
+        <script src="src/service/servicePlantType.js"></script>
+        <script src="src/service/servicePlantSort.js"></script>
+
+        <!--<script src="src/service/Auth.js"></script>-->
+        <!--<script src="src/service/authInterceptor.js"></script>-->
+
+        <!--<script src="src/directive/updateElementText.js"></script>-->
+        <!--<script src="src/directive/comparepass.js"></script>-->
+
+
+        <title update-element-text></title>
+
+    </head>
+
+    <body ng-app="sprinkle" md-theme="docs-dark" ng-cloak>
+
+        <toaster-container></toaster-container>
+
+        <div layout="column" flex layout-fill>
+            <div ui-view="header"></div>
+            <div ui-view="content" flex></div>
+        </div>
+
+    </body>
+</html>

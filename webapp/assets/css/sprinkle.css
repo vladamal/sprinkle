@@ -1,0 +1,90 @@
+
+
+/*#locale{*/
+    /*margin: 0;*/
+/*}*/
+/*.imgLocale {*/
+    /*height: 21px;*/
+/*}*/
+
+.invisible {
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+}
+
+md-input-container {
+    width: 100%;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: transparent !important;
+}
+
+
+md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
+    min-height: 100% !important;
+}
+
+/*  Speed Dial  */
+/*md-fab-actions button.md-button.md-docs-dark-theme.md-raised {*/
+    /*background-color: rgb(255,87,34);*/
+/*}*/
+
+/*.md-button.md-docs-dark-theme.md-raised:not([disabled]):hover {*/
+    /*background-color: #4CAF50;*/
+/*}*/
+
+/*  Speed Dial Always On Top    */
+/*#actionsSpeedDial {*/
+    /*z-index: 3;*/
+    /*position: fixed;*/
+    /*top: 84px;*/
+    /*right: 26px;*/
+/*}*/
+div[md-tabs-template] {
+    overflow: auto;
+}
+md-tabs-content-wrapper,
+md-tab-content,
+md-tabs {
+    overflow: visible;
+}
+/****************************/
+
+
+#plantsView {
+    /*padding-top: 47px;*/
+    overflow: hidden;
+}
+
+
+
+.btnGridView {
+    padding: 0;
+    border-radius: 0;
+    height: 65px;
+    width: 65px;
+}
+.btnGridView md-icon {
+    height: 42px;
+    width: 42px;
+}
+
+.btnGridView:disabled md-icon svg {
+    fill: grey;
+}
+
+
+/*md-bottom-sheet.md-docs-dark-theme {*/
+    /*background-color: #303030 !important;*/
+/*}*/
+
+
+
+#mdcAddGrid {
+    width: 42%;
+    display: block;
+    margin: 11% auto;
+}

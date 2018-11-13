@@ -1,0 +1,190 @@
+<md-dialog aria-label="Signup" md-theme="docs-dark">
+    <form layout="column" name="signupForm" novalidate>
+
+        <!--    Modal Header   -->
+        <md-toolbar layout-padding layout="row">
+            <div class="md-toolbar-tools">
+                <h2 translate>login.REGISTER_TITLE</h2>
+                <span flex></span>
+                <md-button class="md-icon-button " ng-click="vm.cancel()">
+                    <md-icon md-svg-src="assets/icons/ic_clear_black_24px.svg" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <!--    Modal Content   -->
+        <md-dialog-content layout-padding>
+            <div class="md-dialog-content" layout="column" layout-padding>
+
+                <!--    Firstname   -->
+                <md-input-container class="md-block">
+                    <label for="first_name" translate>login.FIRSTNAME</label>
+                    <input required minlength="4" maxlength="42" type="text"
+                           ng-pattern="/^[a-zA-Z]*$/"
+                           ng-model="user.firstname"
+                           name="firstname"
+                           id="first_name">
+                    <md-icon md-svg-src="assets/icons/ic_info_outline_black_24px.svg" class="icon">
+                        <md-tooltip md-direction="right" translate-compile>{{vm.tooltip.firstname}}</md-tooltip>
+                    </md-icon>
+                    <div ng-messages>
+                        <div ng-message="required"
+                             ng-class="{'invisible':!signupForm.firstname.$error.required}"
+                             translate>user.validation.FIRSTNAMEREQ
+                        </div>
+                        <div ng-message="pattern"
+                             ng-class="{'invisible':!signupForm.firstname.$error.pattern}"
+                             translate>user.validation.NONUMBERS
+                        </div>
+                        <div ng-message-exp="['minlength', 'maxlength']"
+                             ng-class="{'invisible':!signupForm.firstname.$error.minlength}"
+                             translate>user.validation.FIRSTNAMESHORT
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <!--    Lastname   -->
+                <md-input-container class="md-block">
+                    <label for="last_name" translate>login.LASTNAME</label>
+                    <input required minlength="4" maxlength="42" type="text"
+                           ng-pattern="/^[a-zA-Z]*$/"
+                           ng-model="user.lastname"
+                           name="lastname"
+                           id="last_name">
+                    <md-icon md-svg-src="assets/icons/ic_info_outline_black_24px.svg" class="icon">
+                        <md-tooltip md-direction="right">{{vm.tooltip.lastname}}</md-tooltip>
+                    </md-icon>
+                    <div ng-messages>
+                        <div ng-message="required"
+                             ng-class="{'invisible':!signupForm.lastname.$error.required}"
+                             translate>user.validation.LASTNAMEREQ
+                        </div>
+                        <div ng-message="pattern"
+                             ng-class="{'invisible':!signupForm.lastname.$error.pattern}"
+                             translate>user.validation.NONUMBERS
+                        </div>
+                        <div ng-message-exp="['minlength', 'maxlength']"
+                             ng-class="{'invisible':!signupForm.lastname.$error.minlength}"
+                             translate>user.validation.LASTNAMESHORT
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <!--    Username   -->
+                <md-input-container class="md-block">
+                    <label for="username" translate>login.USERNAME</label>
+                    <input required minlength="4" maxlength="24" type="text"
+                           ng-pattern="/^\s*\w*\s*$/"
+                           ng-model="user.username"
+                           name="username"
+                           id="username">
+                    <md-icon md-svg-src="assets/icons/ic_info_outline_black_24px.svg" class="icon">
+                        <md-tooltip md-direction="right">{{vm.tooltip.username}}</md-tooltip>
+                    </md-icon>
+                    <div ng-messages>
+                        <div ng-message="required"
+                             ng-class="{'invisible':!signupForm.username.$error.required}"
+                             translate>user.validation.USERNAMEREQ
+                        </div>
+                        <div ng-message-exp="['minlength', 'maxlength']"
+                             ng-class="{'invisible':!signupForm.username.$error.minlength}"
+                             translate>user.validation.USERNAMESHORT
+                        </div>
+                        <div ng-message="pattern"
+                             ng-class="{'invisible':!signupForm.username.$error.pattern}"
+                             translate>user.validation.PATTERN
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <!--    Email   -->
+                <md-input-container class="md-block">
+                    <label for="email" translate>login.EMAIL</label>
+                    <input required minlength="9" maxlength="42"
+                           ng-pattern="/^.+@.+\..+$/" type="email"
+                           ng-model="user.email"
+                           name="email"
+                           id="email">
+                    <md-icon md-svg-src="assets/icons/ic_info_outline_black_24px.svg" class="icon">
+                        <md-tooltip md-direction="right">{{vm.tooltip.email}}</md-tooltip>
+                    </md-icon>
+                    <div ng-messages>
+                        <div ng-message="required"
+                             ng-class="{'invisible':!signupForm.email.$error.required}"
+                             translate>user.validation.EMAILREQ
+                        </div>
+                        <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']"
+                             ng-class="{'invisible':!signupForm.email.$error.minlength}"
+                             translate>user.validation.EMAIL
+                        </div>
+                        <div ng-message="pattern"
+                             ng-class="{'invisible':!signupForm.email.$error.pattern}"
+                             translate>user.validation.EMAILPATTERN
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <!--    Password   -->
+                <md-input-container class="md-block">
+                    <label for="password" translate>login.PASSWORD</label>
+                    <input required minlength="6" type="password"
+                           ng-model="user.password"
+                           name="password"
+                           id="password">
+                    <md-icon md-svg-src="assets/icons/ic_info_outline_black_24px.svg" class="icon">
+                        <md-tooltip md-direction="right">{{vm.tooltip.password}}</md-tooltip>
+                    </md-icon>
+                    <div ng-messages>
+                        <div ng-message="required"
+                             ng-class="{'invisible':!signupForm.password.$error.required}"
+                             translate>user.validation.PASSREQ
+                        </div>
+                        <div ng-message-exp="['minlength', 'maxlength']"
+                             ng-class="{'invisible':!signupForm.password.$error.minlength}"
+                             translate>user.validation.PASSSHORT
+                        </div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container class="md-block">
+                    <label for="password" translate>login.PASSWORDREPEAT</label>
+                    <input required minlength="6" type="password"
+                           ng-model="vm.compare"
+                           comparepass="user.password"
+                           name="passwordRepeat"
+                           id="passwordRepeat">
+                    <md-icon md-svg-src="assets/icons/ic_info_outline_black_24px.svg" class="icon">
+                        <md-tooltip md-direction="right">{{vm.tooltip.password}}</md-tooltip>
+                    </md-icon>
+                    <div ng-messages>
+                        <div ng-message="required"
+                             ng-class="{'invisible':!signupForm.passwordRepeat.$error.required}"
+                             translate>user.validation.PASSREQ
+                        </div>
+                        <div ng-message-exp="['minlength', 'maxlength']"
+                             ng-class="{'invisible':!signupForm.passwordRepeat.$error.minlength}"
+                             translate>user.validation.PASSSHORT
+                        </div>
+                        <div ng-message="compareto"
+                             ng-class="{'invisible':!signupForm.passwordRepeat.$error.comparepass}"
+                             translate>user.validation.PASSCOMPARE
+                        </div>
+                    </div>
+                </md-input-container>
+
+            </div>
+        </md-dialog-content>
+
+        <!--    Modal Actions   -->
+        <md-dialog-actions layout="row">
+            <span flex></span>
+            <!--<md-button ng-click="vm.cancel()" md-no-ink class="md-primary">-->
+                <!--<span translate>global.CANCEL</span>-->
+            <!--</md-button>-->
+            <md-button ng-click="vm.signup(user)" class="md-raised md-warn" ng-disabled="signupForm.$invalid">
+                <span translate>login.REGISTER</span>
+            </md-button>
+        </md-dialog-actions>
+
+    </form>
+</md-dialog>

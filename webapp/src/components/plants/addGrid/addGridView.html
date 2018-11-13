@@ -1,0 +1,46 @@
+<md-tab label="+">
+    <div class="demo-tab tab{{$index+1}}">
+        <md-card id="mdcAddGrid">
+            <form ng-submit="vmAddGrid.addGrid($parent.vmGrids)" layout="column"
+                  name="addGridForm"
+                  class="md-padding" novalidate>
+
+                <!--<div flex>-->
+                    <!--<h2 class="md-subhead">-->
+                        <!--Dodavanje nove povr&#353;ine-->
+                    <!--</h2>-->
+                <!--</div>-->
+
+                <div layout="column" layout-xs="column" style="margin">
+                    <md-input-container>
+                        <label for="label">Naslov</label>
+                        <input type="text" id="label" ng-model="vmAddGrid.grid.gridName"
+                               required minlength=4 maxlength=24>
+                    </md-input-container>
+                    <div layout="row" layout-xs="column">
+                        <md-input-container flex-gt-xs="50">
+                            <label>Tip</label>
+                            <md-select ng-model="vmAddGrid.grid.gridType" required>
+                                <md-option ng-value=0>Ba&#353;ta</md-option>
+                                <md-option ng-value=1>Njiva</md-option>
+                                <md-option ng-value=2>Vo&#263;njak</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <div flex-gt-xs="20"></div>
+                        <md-input-container id="width" flex-gt-xs="30">
+                            <label>&#352;irina</label>
+                            <input flex type="number" aria-label="grid width"
+                                   ng-model="vmAddGrid.grid.gridWidth"
+                                   minlength=1 maxlength=199>
+                        </md-input-container>
+                    </div>
+                </div>
+
+                <md-button class="add-tab md-primary md-raised" ng-disabled="addGridForm.$invalid"
+                           type="submit">Dodaj</md-button>
+
+            </form>
+        </md-card>
+
+    </div>
+</md-tab>

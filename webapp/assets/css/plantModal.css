@@ -1,0 +1,54 @@
+
+md-dialog#addPlant{
+    color: whitesmoke;
+}
+
+#addPlant .md-toolbar-tools:first-child {
+    padding-bottom: 0;
+}
+#addPlant .md-toolbar-tools:last-child {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#addPlant .md-toolbar-tools:last-child p {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+#addPlant md-grid-tile {
+    background-color: #555555;
+}
+#addPlant md-grid-tile:hover {
+    opacity: 0.5;
+}
+
+#addPlant md-grid-tile-footer {
+    height: 33px
+}
+
+#addPlant md-grid-tile-footer figcaption,
+#addPlant md-grid-tile-footer figcaption h3 {
+    margin: auto;
+}
+
+#addPlant md-grid-tile md-icon {
+    margin-top: 17%;
+    height: 45%;
+    width: 55%;
+}
+
+/* Label */
+md-tooltip {
+    max-width: 235px;
+}
+#viewLabel md-icon {
+    margin-top: 1px;
+}
+#viewLabel #numberOfPlants {
+    max-width: 88px;
+}
+
+
+#dates md-input-container {
+    width: 85%;
+}

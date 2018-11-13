@@ -1,0 +1,118 @@
+
+<div id="listView" layout-fill>
+
+                    <!--    Table  -->
+                    <md-table-container
+                            style="margin-bottom: 63px;">
+
+                        <table md-table
+                               ng-model="vmList.selectedPlants"
+                               class="example-animate-container">
+
+                            <!--    Header  -->
+                            <thead md-head md-order="vmList.query.order">
+                            <tr md-row>
+                                <th md-column>&nbsp;</th>
+                                <th md-column md-order-by="sort" hide-xs>Sorta</th>
+                                <th md-column md-order-by="type" hide-xs>Tip</th>
+                                <th md-column md-order-by="label">Oznaka</th>
+                                <th md-column md-order-by="plantingDate" hide-xs hide-sm>Zasadjeno</th>
+                                <th md-column md-order-by="sprinkleDate">Prskano</th>
+                                <!--<th md-column md-order-by="bloomingDate" hide-xs hide-sm>Cvetanje</th>-->
+                                <!--<th md-column md-order-by="harvestDate" hide-xs>Berba</th>-->
+                                <th md-column>&nbsp;</th>
+                            </tr>
+                            </thead>
+
+                            <!--    Body  -->
+                            <tbody md-body md-select-id="id">
+                            <tr md-row ng-repeat="plant in vmGrids.plants
+                                                        | orderBy   : vmList.query.order
+                                                        | limitTo   : vmList.query.limit : (vmList.query.page - 1) * vmList.query.limit"
+                                class="animate-repeat">
+
+                                <!--    Properties  -->
+                                <td md-cell>&nbsp;</td>
+                                <td md-cell hide-xs>
+                                    <md-icon md-svg-src="{{plant.icon}}.svg" aria-label="icon"></md-icon>
+                                    <span hide-sm>{{plant.sort}}</span>
+                                </td>
+                                <td md-cell hide-xs>{{plant.type}}</td>
+                                <td md-cell>{{plant.label}}</td>
+                                <td md-cell hide-xs hide-sm>{{vmGrids.viewDate(plant.datePlanting)}}</td>
+                                <td md-cell>
+                                    <md-tooltip md-delay="100" md-direction="right" ng-if="plant.logSprinkle.length>1"
+                                        class="sprinkle">
+                                        <ul>
+                                            <li ng-repeat="date in plant.logSprinkle track by $index">
+                                                {{date}}
+                                            </li>
+                                        </ul>
+                                    </md-tooltip>
+                                    {{vmGrids.viewDate(plant.logSprinkle[plant.logSprinkle.length-1])}}
+                                </td>
+                                <!--<td md-cell hide-xs hide-sm>{{vmGrids.viewDate(plant.dateBlooming)}}</td>-->
+                                <!--<td md-cell hide-xs>{{vmGrids.viewDate(plant.dateHarvest)}}</td>-->
+
+                                <!--    Dropdown Menu   -->
+                                <td md-cell>
+                                    <md-menu md-offset="0 45"  md-position-mode="target-right target">
+
+                                        <md-button aria-label="open menu button" class="md-icon-button"
+                                                   ng-click="vmList.openMenu($mdOpenMenu, $event)">
+                                            <md-icon md-svg-icon="assets/icons/ic_menu_white_18px.svg"></md-icon>
+                                        </md-button>
+
+                                        <md-menu-content>
+                                            <md-menu-item>
+                                                <md-button>
+                                                    <!--<md-icon md-font-library="material-icons">done</md-icon>-->
+                                                    <span translate>plant.UPDATE</span>
+                                                </md-button>
+                                            </md-menu-item>
+                                            <md-menu-item>
+                                                <md-button ng-click="vmGrids.confirmDelete(plant, $event)">
+                                                    <!--<md-icon md-font-library="material-icons">block</md-icon>-->
+                                                    <span translate>plant.ARCHIVE</span>
+                                                </md-button>
+                                            </md-menu-item>
+
+                                            <md-menu-divider></md-menu-divider>
+
+                                            <md-menu-item>
+                                                <md-button>
+                                                    <!--<md-icon md-font-library="material-icons">call_merge</md-icon>-->
+                                                    <span>Novo Prskanje</span>
+                                                </md-button>
+                                            </md-menu-item>
+                                        </md-menu-content>
+                                    </md-menu>
+                                </td>
+
+
+                            </tr>
+                            </tbody>
+
+                            <!--    Footer  -->
+                            <!--<tfoot md-foot>-->
+                            <!--<tr md-row>-->
+                            <!--<td md-cell colspan="7"></td>-->
+                            <!--<td md-cell>-->
+                            <!-- -->
+                            <!--</td>-->
+                            <!--</tr>-->
+                            <!--</tfoot>-->
+
+                        </table>
+                    </md-table-container>
+
+                    <!--    Pagination  -->
+                    <md-table-pagination md-page="vmList.query.page"
+                                         md-limit="vmList.query.limit"
+                                         md-limit-options="vmList.query.paginationLimit"
+                                         md-total="{{vmGrids.plants.length}}"
+                                         md-label="{page: 'Strana:', rowsPerPage: 'Sadnica po strani:', of: 'od'}"
+                                         md-page-select
+                                         md-boundary-links></md-table-pagination>
+
+</div>

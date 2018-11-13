@@ -1,0 +1,56 @@
+
+<md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="rightSort">
+
+    <md-toolbar class="md-theme-light">
+        <h1 class="md-toolbar-tools">Novi tip vocke</h1>
+    </md-toolbar>
+    <md-content layout-padding>
+        <form name="addPlantSortForm">
+            <md-input-container>
+                <label for="sortName">Ime sorte</label>
+                <input type="text" id="sortName"
+                       ng-model="vmPlant.plantSort.name" md-autofocus
+                       minlength=3 required>
+            </md-input-container>
+            <md-input-container>
+                <label for="sortColor">Boja</label>
+                <input type="text" id="sortColor"
+                       ng-model="vmPlant.plantSort.color"
+                       minlength=3 required>
+            </md-input-container>
+            <md-input-container>
+                <label for="sortTsate">Ukus</label>
+                <input type="text" id="sortTsate"
+                       ng-model="vmPlant.plantSort.taste"
+                       minlength=3 required>
+            </md-input-container>
+            <md-input-container>
+                <label>Cvetanje</label>
+                <md-select ng-model="vmPlant.plantSort.dateBlooming"
+                           id="dateBlooming"
+                           name="dateBlooming"
+                           required>
+                    <md-option ng-repeat="month in vmPlant.months track by $index" ng-value="$index+1">
+                        {{month}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+            <md-input-container>
+                <label>Berba</label>
+                <md-select ng-model="vmPlant.plantSort.dateHarvest"
+                           id="dateHarvest"
+                           name="dateHarvest"
+                           required>
+                    <md-option ng-repeat="month in vmPlant.months track by $index" ng-value="$index+1">
+                        {{month}}
+                    </md-option>
+                </md-select>
+            </md-input-container>
+        </form>
+        <md-button ng-click="vmPlant.addSort()" class="md-primary"
+                ng-disabled="addPlantSortForm.$invalid">
+            dodaj
+        </md-button>
+    </md-content>
+
+</md-sidenav>

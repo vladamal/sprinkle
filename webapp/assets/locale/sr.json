@@ -1,0 +1,84 @@
+{
+
+  "login": {
+    "LOGIN_TITLE": "Logovanje",
+    "LOGIN": "Uloguj se",
+    "REGISTER_TITLE": "Registracija",
+    "REGISTER": "Registruj se",
+    "FIRSTNAME": "Ime",
+    "LASTNAME": "Prezime",
+    "USERNAME": "Korisni\u010Dko ime",
+    "EMAIL": "Email",
+    "PASSWORD": "\u0160ifra",
+    "PASSWORDREPEAT": "Ponovi \u0161ifru"
+  },
+
+  "home": {
+    "HOME": "Po\u010Detna"
+  },
+
+  "tooltip": {
+    "FIRSTNAME": "Va\u0161e ime.",
+    "LASTNAME": "Va\u0161e prezime.",
+    "PASSWORD": "\u0160ifra za pristupanje aplikaciji.",
+    "EMAIL": "Email treba da bude ovog oblika example@test.com - i mo\u017Ee da ima najmanje 9 a najvi\u0161e 42 karaktera.",
+    "USERNAME": "Kratko ime za pristupanje aplikaciji."
+  },
+
+  "user": {
+    "verification": {
+      "TITLE": "Verifikacija naloga",
+      "CONTENT": "Ukucajte ili prekopirajte verifikacioni kod koji smo poslali na va\u0161u e-mail adresu.",
+      "VERIFY": "Verifikuj",
+      "CODE": "Kod"
+    },
+    "validation": {
+      "FIRSTNAMEREQ": "Ime je obavezno polje.",
+      "FIRSTNAMESHORT": "Ime mora sadr\u017Eati barem 4 karaktera.",
+
+      "LASTNAMEREQ": "Prezime je obavezno polje.",
+      "LASTNAMESHORT": "Prezime mora sadr\u017Eati barem 4 karaktera.",
+      "NONUMBERS": "Samo slova su dozvoljena (a-z  A-Z).",
+
+      "EMAILREQ": "Email je obavezno polje.",
+      "EMAIL": "e-mail adresa treba da bude izme\u0111u 9 i 42 karaktera i treba da bude ovog oblika example@test.com.",
+
+      "USERNAMEREQ": "Korisni\u010Dko ime je obabvezno polje.",
+      "USERNAMESHORT": "Korisni\u010Dko ime mora sadr\u017Eati najmanje 6 karaktera.",
+      "PATTERN": "Korisni\u010Dko ime mora biti jedno slovo.",
+
+      "PASSREQ": "\u0160ifra je obavezno polje.",
+      "PASSSHORT": "\u0160ifra treba da bude du\u017Ea od 5 karaktera.",
+      "PHONE": "Broj telefona treba da bude izme\u0111u 9 i 15 karaktera i treba da bude internacionalnog oblika."
+    }
+  },
+
+  "plant": {
+    "UPDATE": "Izmeni",
+    "ARCHIVE": "Izbri\u0161i",
+    "SPRINKLE": "Dodaj datum prskanja",
+
+
+    "WHA": "\u0160taaaa"
+  },
+
+
+  "global": {
+    "CANCEL": "Odustani",
+    "SUBMIT": "PRIHVATI",
+    "SAVE": "Sa\u010Duvaj",
+
+
+    "WHA": "\u0160taaaa"
+  },
+
+  "tabs": {
+    "TABONE": "JEDAN",
+    "TABONETITLE": "Prvi Tab",
+    "TABTWO": "DVA",
+    "TABTWOTITLE": "Drugi Tab",
+    "TABTHREE": "TRI",
+    "TABTHREETITLE": "Tre\u0107i Tab"
+  }
+
+}

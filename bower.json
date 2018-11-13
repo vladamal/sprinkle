@@ -1,0 +1,30 @@
+{
+  "name": "sprinkle",
+  "homepage": "https://github.com/vladamal/sprinkle",
+  "authors": [
+    "vladmal <vladimir.malacko@gmail.com>"
+  ],
+  "description": "Sprinkle organizer.",
+  "main": "app.js",
+  "keywords": [
+    "sprinkle"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular-ui-router": "^0.4.2",
+    "angular-resource": "^1.6.4",
+    "angular-animate": "^1.6.4",
+    "angular-scroll": "^1.0.0",
+    "angular-toastr": "^2.1.1",
+    "angular-aria": "^1.6.4",
+    "angular-material": "^1.1.4",
+    "angular-translate": "^2.15.1",
+    "angular-translate-loader-static-files": "^2.15.1",
+    "angular-material-data-table": "^0.10.10",
+    "angular": "^1.6.4",
+    "angular-drag-and-drop-lists": "^2.1.0",
+    "angular-gridster": "^0.13.15",
+    "lodash": "^4.17.4"
+  }
+}

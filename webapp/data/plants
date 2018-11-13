@@ -1,0 +1,336 @@
+[
+  {"id" : "1",
+    "label" : "jabuka zasad 2017",
+    "type" : "jabuka",
+    "sort" : "gala",
+    "withdrawal" : "",
+    "plantingDate" : "12/14/2016 5:22:24 PM",
+    "bloomingDate" : "12/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM"],
+
+    "color": "#b2dfdb",
+    "sizeX": 1,
+    "sizeY": 1,
+    "row": 1,
+    "col":1,
+
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_flip_to_back_white_18px",
+
+    "archived" : false
+  },
+
+  { "id" : "2",
+    "label" : "kruska zasad 2017",
+    "type" : "kruška",
+    "sort" : "viljamovka",
+    "withdrawal" : "",
+    "plantingDate" : "12/14/2016 5:22:24 PM",
+    "sprinkleDate" : "12/14/2016 5:22:24 PM",
+    "bloomingDate" : "12/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM"],
+
+    "color": "#ff8a80",
+    "sizeX": 1,
+    "sizeY": 1,
+    "row": 1,
+    "col":2
+  ,
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_language_white_18px",
+
+    "archived" : false
+  },
+
+  { "id" : "3",
+    "label" : "grozdje zasad 2014",
+    "type" : "grož?e",
+    "sort" : "shardone",
+    "withdrawal" : "",
+    "plantingDate" : "12/14/2016 5:22:24 PM",
+    "sprinkleDate" : "12/14/2016 5:22:24 PM",
+    "bloomingDate" : "12/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM"],
+
+    "color": "#ff6e40",
+    "sizeX": 1,
+    "sizeY": 1,
+    "row": 1,
+    "col":3
+  ,
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_extension_white_18px",
+
+    "archived" : false
+  },
+
+  { "id" : "4",
+    "label" : "grozdje zasad 2016",
+    "type" : "grozdje",
+    "sort" : "shardone",
+    "withdrawal" : "",
+    "plantingDate" : "12/14/2016 5:22:24 PM",
+    "sprinkleDate" : "12/14/2016 5:22:24 PM",
+    "bloomingDate" : "12/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM"],
+
+    "color": "#64ffda",
+    "sizeX":1,
+    "sizeY":1,
+    "row": 2,
+    "col":1
+  ,
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_extension_white_18px",
+
+    "archived" : false
+  },
+
+  { "id" : "5",
+    "label" : "test",
+    "type" : "kruska",
+    "sort" : "viljamovka",
+    "withdrawal" : "",
+    "plantingDate" : "12/14/2016 5:22:24 PM",
+    "sprinkleDate" : "12/14/2016 5:22:24 PM",
+    "bloomingDate" : "12/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM"],
+
+    "color": "#689f38",
+    "sizeX": 1,
+    "sizeY": 1,
+    "row": 2,
+    "col":2
+  ,
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_language_white_18px",
+
+    "archived" : false
+  },
+
+  { "id" : "6",
+    "label" : "op op",
+    "type" : "grozdje",
+    "sort" : "shardone",
+    "withdrawal" : "",
+    "plantingDate" : "4/14/2015 5:22:24 PM",
+    "sprinkleDate" : "8/14/2016 5:22:24 PM",
+    "bloomingDate" : "6/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM"],
+
+    "color": "#64ffda",
+    "sizeX": 1,
+    "sizeY": 1,
+    "row": 2,
+    "col":3
+  ,
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_extension_white_18px",
+
+    "archived" : false
+  },
+
+  { "id" : "7",
+    "label" : "jabuka zasad 2013",
+    "type" : "jabuka",
+    "sort" : "delises",
+    "withdrawal" : "",
+    "plantingDate" : "3/4/2015 5:22:24 PM",
+    "sprinkleDate" : "8/14/2016 5:22:24 PM",
+    "bloomingDate" : "2/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM"],
+
+    "color": "#64ffda",
+    "sizeX":1,
+    "sizeY":1,
+    "row": 3,
+    "col":1
+  ,
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_markunread_mailbox_white_18px",
+
+    "archived" : false
+  },
+
+  { "id" : "8",
+    "label" : "Category 8",
+    "type" : "jabuka",
+    "sort" : "gala",
+    "withdrawal" : "",
+    "plantingDate" : "12/14/2016 5:22:24 PM",
+    "sprinkleDate" : "12/14/2016 5:22:24 PM",
+    "bloomingDate" : "12/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM"],
+
+    "color": "#009688",
+    "sizeX":1,
+    "sizeY":1,
+    "row": 3,
+    "col":2
+  ,
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_flip_to_back_white_18px",
+
+    "archived" : false
+  },
+
+  { "id" : "9",
+    "label" : "Category 9",
+    "type" : "kruska",
+    "sort" : "viljamovka",
+    "withdrawal" : "",
+    "plantingDate" : "12/14/2016 5:22:24 PM",
+    "sprinkleDate" : "12/14/2016 5:22:24 PM",
+    "bloomingDate" : "12/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM"],
+
+    "color": "#ffea00",
+    "sizeX":1,
+    "sizeY":1,
+    "row": 3,
+    "col":3
+  ,
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_language_white_18px",
+
+    "archived" : false
+  },
+
+  { "id" : "10",
+    "label" : "Category 10",
+    "type" : "grozdje",
+    "sort" : "shardone",
+    "withdrawal" : "",
+    "plantingDate" : "12/14/2016 5:22:24 PM",
+    "sprinkleDate" : "12/14/2016 5:22:24 PM",
+    "bloomingDate" : "12/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM"],
+
+    "color": "#4dd0e1",
+    "sizeX":1,
+    "sizeY":1,
+    "row": 4,
+    "col":1
+  ,
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_extension_white_18px",
+
+    "archived" : false
+  },
+
+  { "id" : "11",
+    "label" : "Category 11",
+    "type" : "grozdje",
+    "sort" : "shardone",
+    "withdrawal" : "",
+    "plantingDate" : "12/14/2016 5:22:24 PM",
+    "lastSprinkleDate" : "12/14/2016 5:22:24 PM",
+    "bloomingDate" : "12/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM"],
+
+    "color": "#ffcc80",
+    "sizeX":1,
+    "sizeY":1,
+    "row": 5,
+    "col":2
+  ,
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_extension_white_18px",
+
+    "archived" : false
+  },
+
+  { "id" : "12",
+    "label" : "Category 12",
+    "type" : "kruska",
+    "sort" : "viljamovka",
+    "withdrawal" : "",
+    "plantingDate" : "12/14/2016 5:22:24 PM",
+    "sprinkleDate" : "12/14/2016 5:22:24 PM",
+    "bloomingDate" : "12/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM"],
+
+    "color": "#80cbc4",
+    "sizeX":1,
+    "sizeY":1,
+    "row": 4,
+    "col":3
+  ,
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_language_white_18px",
+
+    "archived" : false
+  },
+
+  { "id" : "13",
+    "label" : "Category 13",
+    "type" : "grozdje",
+    "sort" : "shardone",
+    "withdrawal" : "",
+    "plantingDate" : "12/14/2016 5:22:24 PM",
+    "sprinkleDate" : "12/14/2016 5:22:24 PM",
+    "bloomingDate" : "12/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM"],
+
+    "color": "#00bcd4",
+    "sizeX":1,
+    "sizeY":1,
+    "row": 4,
+    "col":4
+  ,
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_extension_white_18px",
+
+    "archived" : false
+  },
+
+  { "id" : "14",
+    "label" : "Category 14",
+    "type" : "jabuka",
+    "sort" : "delises",
+    "withdrawal" : "",
+    "plantingDate" : "12/14/2016 5:22:24 PM",
+    "sprinkleDate" : "12/14/2016 5:22:24 PM",
+    "bloomingDate" : "12/14/2016 5:22:24 PM",
+    "harvestDate" : "11/14/2016 5:22:24 PM",
+    "logSprinkle" : [ "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM", "11/14/2016 5:22:24 PM"],
+
+    "color": "#795548",
+    "sizeX":1,
+    "sizeY":1,
+    "row": 5,
+    "col":1
+  ,
+    "notes" : "category description",
+    "description" : "category description",
+    "icon" : "assets/icons/inkoop/ic_markunread_mailbox_white_18px",
+
+    "archived" : false
+  }
+]

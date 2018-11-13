@@ -1,0 +1,262 @@
+[
+      {
+        "icon": "assets/icons/ic_add_white_24px.svg",
+        "type"  : "jabuka",
+        "name"  : "zlatni delises",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_add_white_24px.svg",
+        "type"  : "jabuka",
+        "name"  : "red cif",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_add_white_24px.svg",
+        "type"  : "jabuka",
+        "name"  : "greni smit",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_add_white_24px.svg",
+        "type"  : "jabuka",
+        "name"  : "ricared",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_add_white_24px.svg",
+        "type"  : "jabuka",
+        "name"  : "ajdared",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_add_white_24px.svg",
+        "type"  : "jabuka",
+        "name"  : "mucu",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_add_white_24px.svg",
+        "type"  : "jabuka",
+        "name"  : "kolacara",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_add_white_24px.svg",
+        "type"  : "jabuka",
+        "name"  : "jonatan",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_add_white_24px.svg",
+        "type"  : "jabuka",
+        "name"  : "cadel",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_add_white_24px.svg",
+        "type"  : "jabuka",
+        "name"  : "jonagold",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_add_white_24px.svg",
+        "type"  : "jabuka",
+        "name"  : "cacanska pozna",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon"  : "assets/icons/inkoop/ic_clear_white_18px.svg",
+        "type"  : "kruska",
+        "name"  : "sanpionka",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon"  : "assets/icons/inkoop/ic_clear_white_18px.svg",
+        "type"  : "kruska",
+        "name"  : "junska lepotica",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon"  : "assets/icons/inkoop/ic_clear_white_18px.svg",
+        "type"  : "kruska",
+        "name"  : "viljamovka (bartlet)",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon"  : "assets/icons/inkoop/ic_clear_white_18px.svg",
+        "type"  : "kruska",
+        "name"  : "crvena viljamovka",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon"  : "assets/icons/inkoop/ic_clear_white_18px.svg",
+        "type"  : "kruska",
+        "name"  : "kaludjerka",
+        "color"  : "",
+        "taste"  : ""
+      },
+  {
+        "icon": "assets/icons/inkoop/ic_extension_white_18px.svg",
+        "type"  : "grozdje",
+        "name"  : "muskat",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/inkoop/ic_extension_white_18px.svg",
+        "type"  : "grozdje",
+        "name"  : "chardonnay",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/inkoop/ic_extension_white_18px.svg",
+        "type"  : "grozdje",
+        "name"  : "frankova",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/inkoop/ic_extension_white_18px.svg",
+        "type"  : "grozdje",
+        "name"  : "viktorija",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/inkoop/ic_extension_white_18px.svg",
+        "type"  : "grozdje",
+        "name"  : "kardinal",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/inkoop/ic_extension_white_18px.svg",
+        "type"  : "grozdje",
+        "name"  : "cabernet suvignon",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/inkoop/ic_extension_white_18px.svg",
+        "type"  : "grozdje",
+        "name"  : "crni burgundunac",
+        "color"  : "",
+        "taste"  : ""
+      }
+    , {
+        "icon": "assets/icons/inkoop/ic_language_white_18px.svg",
+        "type"  : "breskva",
+        "name"  : "redheven",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/inkoop/ic_language_white_18px.svg",
+        "type"  : "breskva",
+        "name"  : "vinogrdarska",
+        "color"  : "",
+        "taste"  : ""
+      }
+    ,
+      {
+        "icon": "assets/icons/inkoop/ic_markunread_mailbox_white_18px.svg",
+        "type"  : "sljiva",
+        "name"  : "stenlej",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/inkoop/ic_markunread_mailbox_white_18px.svg",
+        "type"  : "sljiva",
+        "name"  : "herman",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/inkoop/ic_markunread_mailbox_white_18px.svg",
+        "type"  : "sljiva",
+        "name"  : "pozegaca",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/inkoop/ic_markunread_mailbox_white_18px.svg",
+        "type"  : "sljiva",
+        "name"  : "kalifornijska",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/inkoop/ic_markunread_mailbox_white_18px.svg",
+        "type"  : "sljiva",
+        "name"  : "cacnska rana",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/inkoop/ic_markunread_mailbox_white_18px.svg",
+        "type"  : "sljiva",
+        "name"  : "cacanska lepotica",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_autorenew_white_18px.svg",
+        "type"  : "dunja",
+        "name"  : "leskovacka",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_autorenew_white_18px.svg",
+        "type"  : "dunja",
+        "name"  : "trijumf",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_autorenew_white_18px.svg",
+        "type"  : "dunja",
+        "name"  : "vranjska",
+        "color"  : "",
+        "taste"  : ""
+      }
+    ,{
+        "icon": "assets/icons/ic_translate_white_24px.svg",
+        "type"  : "kajsija",
+        "name"  : "dacija",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_translate_white_24px.svg",
+        "type"  : "kajsija",
+        "name"  : "novosadska rodna",
+        "color"  : "",
+        "taste"  : ""
+      },
+      {
+        "icon": "assets/icons/ic_translate_white_24px.svg",
+        "type"  : "kajsija",
+        "name"  : "aurora",
+        "color"  : "",
+        "taste"  : ""
+      }
+  ]

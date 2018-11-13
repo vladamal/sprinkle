@@ -1,0 +1,18 @@
+
+md-icon {
+    color: gainsboro !important;
+}
+
+.hint {
+    color: grey;
+    font-size: 12px;
+}
+
+md-tooltip.sprinkle {
+    height: auto;
+}
+
+md-tooltip.sprinkle ul {
+    list-style: none;
+    padding: 1%;
+}

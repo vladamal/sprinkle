@@ -1,0 +1,72 @@
+
+    <md-content layout-padding layout-fill layout-align="center center" layout="column" layout-gt-xs="row">
+        <form name="userForm"
+              ng-submit="vmLogin.login(user)"
+              layout="column" layout-align="center center"
+              novalidate>
+
+            <!--    Username   -->
+            <md-input-container class="md-block">
+                <label for="username" translate>login.USERNAME</label>
+                <input ng-required minlength="4" maxlength="24" type="text"
+                       ng-pattern="/^\s*\w*\s*$/"
+                       ng-model="user.username"
+                       name="username"
+                       id="username">
+                <md-icon md-svg-src="assets/icons/ic_info_outline_black_24px.svg" class="icon">
+                    <md-tooltip md-direction="right">{{vmLogin.tooltip.username}}</md-tooltip>
+                </md-icon>
+                <div ng-messages>
+                    <div ng-message="ng-required"
+                         ng-class="{'invisible':!userForm.username.$error.required}"
+                         translate>user.validation.USERNAMEREQ
+                    </div>
+                    <div ng-message-exp="['minlength', 'maxlength']"
+                         ng-class="{'invisible':!userForm.username.$error.minlength}"
+                         translate>user.validation.USERNAMESHORT
+                    </div>
+                    <div ng-message="pattern"
+                         ng-class="{'invisible':!userForm.username.$error.pattern}"
+                         translate>user.validation.PATTERN
+                    </div>
+                </div>
+            </md-input-container>
+
+            <!--    Password   -->
+            <md-input-container class="md-block">
+                <label for="password" translate>login.PASSWORD</label>
+                <input ng-required minlength="4" type="password"
+                       ng-model="user.password"
+                       name="password"
+                       id="password">
+                <md-icon md-svg-src="assets/icons/ic_info_outline_black_24px.svg" class="icon">
+                    <md-tooltip md-direction="right">{{vmLogin.tooltip.password}}</md-tooltip>
+                </md-icon>
+                <div ng-messages>
+                    <div ng-message="ng-required"
+                         ng-class="{'invisible':!userForm.password.$error.required}"
+                         translate>user.validation.PASSREQ
+                    </div>
+                    <div ng-message-exp="['minlength', 'maxlength']"
+                         ng-class="{'invisible':!userForm.password.$error.minlength}"
+                         translate>user.validation.PASSSHORT
+                    </div>
+                </div>
+            </md-input-container>
+
+        </form>
+
+        <div layout="column" layout-align="center center">
+            <md-button class="md-fab md-warn" aria-label="login button"
+                       ng-click="vmLogin.login(user)"
+                       ng-disabled="userForm.$invalid">
+                <md-icon md-svg-src="assets/icons/ic_fingerprint_white_24px.svg"></md-icon>
+            </md-button>
+
+            <md-button class="md-icon-button md-primary" aria-label="login button"
+                       ng-click="vmLogin.signup()">
+                <md-icon md-svg-src="assets/icons/ic_add_white_24px.svg"></md-icon>
+            </md-button>
+        </div>
+
+    </md-content>

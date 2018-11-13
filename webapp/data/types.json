@@ -1,0 +1,47 @@
+[
+  {
+    "name": "JABUKA",
+    "icon": "assets/icons/ic_add_white_24px.svg",
+    "sorts": []
+  },
+  {
+    "name": "KRUSKA",
+    "icon": "assets/icons/inkoop/ic_clear_white_18px.svg",
+    "sorts": []
+  },
+  {
+    "name": "GROZDJE",
+    "icon": "assets/icons/inkoop/ic_extension_white_18px.svg",
+    "sorts": []
+  },
+  {
+    "name": "BRESKVA",
+    "icon": "assets/icons/inkoop/ic_language_white_18px.svg",
+    "sorts": []
+  },
+  {
+    "name": "SLJIVA",
+    "icon": "assets/icons/inkoop/ic_markunread_mailbox_white_18px.svg",
+    "sorts": []
+  },
+  {
+    "name": "DUNJA",
+    "icon": "assets/icons/ic_autorenew_white_18px.svg",
+    "sorts": []
+  },
+  {
+    "name": "KAJSIJA",
+    "icon": "assets/icons/ic_translate_white_24px.svg",
+    "sorts":[]
+  },
+  {
+    "name": "TRESNJA",
+    "icon": "assets/icons/ic_replay_white_24px.svg",
+    "sorts": []
+  },
+  {
+    "name": "VISNJA",
+    "icon": "assets/icons/ic_visibility_white_24px.svg",
+    "sorts": []
+  }
+]

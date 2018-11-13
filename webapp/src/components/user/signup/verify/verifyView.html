@@ -1,0 +1,32 @@
+<md-dialog aria-label="Remove Category" md-theme="docs-dark">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2 translate>user.verification.TITLE</h2>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <p translate>user.verification.CONTENT</p>
+                <form name="verifyForm">
+                    <md-input-container class="md-block">
+                        <label for="code" translate>user.verification.CODE</label>
+                        <input required maxlength="42" type="text"
+                               ng-model="vm.code"
+                               id="code">
+                    </md-input-container>
+                </form>
+            </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+
+            <span flex></span>
+            <md-button ng-click="vm.verify(vm.code)" class="md-raised md-warn" ng-disabled="verifyForm.$invalid">
+                <span translate>user.verification.VERIFY</span>
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>

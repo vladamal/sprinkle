@@ -1,0 +1,83 @@
+
+<md-content layout-fill layout="column" md-theme="docs-dark" id="plantsView" flex>
+
+    <!--    Toolbar  -->
+    <md-toolbar layout="row" layout-padding style="background-color: transparent">
+        <div class="md-toolbar-tools">
+
+            <!--<md-button ng-click="vmGrids.newType()">test</md-button>-->
+
+
+            <!--    Create Button  -->
+            <md-button aria-label="add" class="md-fab md-primary md-mini"
+                       ng-click="vmGrids.createPlant(vmGrids.activeGrid)">
+                <md-tooltip md-direction="top">Nova sadnica.</md-tooltip>
+                <md-icon md-svg-src="assets/icons/ic_add_white_24px.svg" aria-label="create"></md-icon>
+            </md-button>
+            <div flex></div>
+
+            <!--    Save GRID  -->
+            <md-button class="md-primary" ng-disabled="true" ng-show="!vmGrids.view">
+                sa&#269;uvaj
+            </md-button>
+            <div flex></div>
+
+            <!--    List Button  -->
+            <md-button class="md-button md-accent btnGridView" aria-label="view list button"
+                       ng-disabled="vmGrids.view==='list'"
+                       ng-click="vmGrids.setView('list')">
+                <md-tooltip md-direction="top">Prikazi listu.</md-tooltip>
+                <md-icon md-svg-icon="assets/icons/view/ic_view_list_white_18px.svg"></md-icon>
+            </md-button>
+
+            <!--    Grid Button  -->
+            <md-button class="md-button md-accent btnGridView" aria-label="view grid button"
+                       ng-disabled="vmGrids.view==='grid'"
+                       ng-click="vmGrids.setView('grid')">
+                <md-tooltip md-direction="top">Prikazi mapu.</md-tooltip>
+                <md-icon md-svg-icon="assets/icons/view/ic_view_comfy_white_18px.svg"></md-icon>
+            </md-button>
+
+        </div>
+    </md-toolbar>
+
+    <!--    Tabs  -->
+    <!--md-selected="selectedIndex"-->
+    <md-tabs md-autoselect md-border-bottom>
+
+        <md-tab style="overflow: auto"
+                ng-repeat="tab in vmGrids.grids"
+                label="{{tab.gridName}}"
+                md-on-select="vmGrids.getPlants(tab._id)">
+            <div class="demo-tab tab{{$index-1}}">
+                <!--style="padding: 25px; text-align: center;"-->
+
+                <!--    Table  -->
+                <div class="step-wrapper" layout-fill>
+
+                    <!--    List  -->
+                    <div ng-show="vmGrids.view==='list'"
+                         ng-include="'src/components/plants/plantsList/plantsListView.html'"
+                         ng-controller="plantsListController as vmList"
+                         layout-fill></div>
+
+                    <!--    Grid  -->
+                    <div ng-show="vmGrids.view==='grid'"
+                         ng-include="'src/components/plants/plantsGrid/plantsGridView.html'"
+                         ng-controller="plantsGridController as vmGrid"
+                         style="
+            overflow: auto;
+            height: 100%;"></div>
+
+                </div>
+
+             </div>
+        </md-tab>
+
+        <!--    Add new TAB  -->
+        <div ng-include="'src/components/plants/addGrid/addGridView.html'"
+             ng-controller="addGridController as vmAddGrid"></div>
+
+    </md-tabs>
+
+</md-content>

@@ -1,0 +1,55 @@
+{
+  "name": "sprinkle",
+  "version": "1.0.0",
+  "description": "parterrer organizer",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladamal/sprinkle.git"
+  },
+  "keywords": [
+    "sprinkle"
+  ],
+  "author": "vladamal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladamal/sprinkle/issues"
+  },
+  "homepage": "https://github.com/vladamal/sprinkle#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "colors": "^1.1.2",
+    "crypto": "0.0.3",
+    "express": "^4.15.2",
+    "express-validator": "^3.2.0",
+    "grunt": "^1.0.1",
+    "grunt-nodemon": "^0.4.2",
+    "jsonwebtoken": "^7.4.0",
+    "jwt-simple": "^0.5.1",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.25",
+    "mongoose": "^4.9.4",
+    "morgan": "^1.8.1",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^1.0.0",
+    "passport-jwt": "^2.2.1",
+    "passport-local": "^1.0.0",
+    "randomstring": "^1.1.5",
+    "sendgrid": "^5.1.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-wiredep": "^3.0.1"
+  }
+}

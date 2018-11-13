@@ -1,0 +1,87 @@
+{
+
+  "login": {
+    "LOGIN_TITLE": "Login",
+    "LOGIN": "Login",
+    "REGISTER_TITLE": "Signup",
+    "REGISTER": "Signup",
+    "FIRSTNAME": "Firstname",
+    "LASTNAME": "Lastname",
+    "USERNAME": "Username",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "PASSWORDREPEAT": "Repeat password"
+  },
+
+  "home": {
+    "HOME": "Home"
+  },
+
+  "tooltip": {
+    "FIRSTNAME": "Your name - must consist at least 4 characters.",
+    "LASTNAME": "Your lastname - must consist at least 4 characters.",
+    "PASSWORD": "Password for login - must consist at least 6 characters.",
+    "EMAIL": "Email is required for verification - must consist between 9 and 42 characters.",
+    "USERNAME": "Short name for login - must consist at least 4 characters."
+  },
+
+  "user": {
+    "verification": {
+      "TITLE": "Account verification",
+      "CONTENT": "Enter verification code from your email.",
+      "VERIFY": "Verify",
+      "CODE": "Code"
+    },
+    "validation": {
+      "FIRSTNAMEREQ": "Firstname is required.",
+      "FIRSTNAMESHORT": "Firstname should be at least 4 characters long.",
+
+      "LASTNAMEREQ": "Lastname is required.",
+      "LASTNAMESHORT": "Lastname should be at least 4 characters long.",
+      "NONUMBERS": "Only regular  characters allowed (a-z  A-Z).",
+
+      "EMAILREQ": "Email is required.",
+      "EMAILSHORT": "Your email must be between 9 and 42 characters long and look like an e-mail address.",
+
+      "USERNAMEREQ": "Username is required.",
+      "USERNAMESHORT": "Username should be at least 4 characters long.",
+      "PATTERN": "Username should be one word.",
+
+      "PASSREQ": "Password is required.",
+      "PASSSHORT": "Password should be at least 6 characters long.",
+      "PASSCOMPARE": "Passwords must match."
+    }
+  },
+
+  "global": {
+    "CANCEL": "Close",
+    "SAVE": "Save",
+    "REMOVE": "Remove"
+  },
+
+  "tabs": {
+    "TABONE": "ONE",
+    "TABONETITLE": "Tab One",
+    "TABTWO": "TWO",
+    "TABTWOTITLE": "Tab Two",
+    "TABTHREE": "THREE",
+    "TABTHREETITLE": "Tab Three"
+  },
+
+  "post": {
+    "ADDPOST": "Add Post",
+    "TITLE": "Title",
+    "CONTENT": "Content",
+    "validation": {
+      "TITLESHORT": "Title should be at least 5 characters long.",
+      "TITLEREQ": "Title is required.",
+      "CONTENTSHORT": "Content should be at least 24 characters long.",
+      "CONTENTREQ": "Content is required.",
+      "DATEVALID": "The entered value is not a date!",
+      "DATEMIN": "Date is too early!",
+      "DATEMAX": "Date is too late!",
+      "DATEWEEK": "Only weekends are allowed!"
+    }
+  }
+
+}

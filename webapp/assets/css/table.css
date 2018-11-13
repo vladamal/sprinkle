@@ -1,0 +1,73 @@
+
+/*  Dark Theme Table  */
+table.md-table td.md-cell,
+.md-table-pagination md-select:not([disabled]):focus .md-select-value,
+md-table-pagination {
+    color: whitesmoke !important;
+}
+table.md-table th.md-column {
+    color: grey !important;
+}
+
+/*table.md-table .md-selected td.md-cell{*/
+table.md-table td.md-cell,
+#listView{
+    background-color: #303030 !important;
+}
+
+/*table.md-table tbody.md-body > tr.md-row:hover,*/
+table.md-table.md-row-select tbody.md-body > tr.md-row:not([disabled]):hover {
+    background-color: grey !important;
+}
+
+md-checkbox.md-default-theme.md-checked .md-icon,
+md-checkbox.md-checked .md-icon {
+    background-color: rgb(255,87,34);
+}
+
+md-checkbox.md-default-theme.md-checked .md-ink-ripple,
+md-checkbox.md-checked .md-ink-ripple {
+    color: rgb(255,87,34);
+}
+/****************************/
+
+table.md-table.md-row-select tbody.md-body > tr.md-row {
+    outline: none;
+}
+
+
+
+/*  Fixed Table Header/Pagination  */
+
+/*  Table Padding*/
+md-table-container tbody:before {
+content: '';
+display: block;
+height: 57px;
+}
+md-table-container tbody:after {
+content: '';
+display: block;
+height: 57px;
+}
+
+md-table-pagination {
+    background-color: #303030;
+    position: absolute;
+    bottom: 64px;
+    right: 17px;
+    width: 100%;
+}
+
+table thead tr {
+width: 100%;
+display: table;
+}
+table.md-table th.md-column {
+background-color: #303030;
+}
+table thead {
+width: 100%;
+background-color: #303030;
+position: fixed;
+}

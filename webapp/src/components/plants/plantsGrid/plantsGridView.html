@@ -1,0 +1,45 @@
+
+<md-content layout-fill>
+    <div gridster="vmGrid.gridsterOptions">
+        <ul>
+            <li gridster-item="plant"
+                ng-repeat="plant in vmGrids.plants track by $index"
+                ng-style="{'background': plant.color}">
+
+                <div class="box">
+                    <div class="box-header">
+                        <h3></h3>
+
+                        <md-icon md-svg-src="{{plant.icon}}.svg"
+                                 aria-label="clear board"></md-icon>
+
+                        <!--<md-button class="md-icon-button" ng-click="vm.remove(plant)">-->
+                            <!--<md-icon md-svg-src="assets/icons/inkoop/ic_delete_white_18px.svg"-->
+                                     <!--aria-label="clear board"></md-icon>-->
+                        <!--</md-button>-->
+                    </div>
+                    <div class="box-content">
+                        <!--<div>-->
+                            <!--<span>Sirina</span>-->
+                            <!--<span>{{plant.sizeX}}</span>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<span>Visina</span>-->
+                            <!--<span>{{plant.sizeY}}</span>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<span>Red</span>-->
+                            <!--<span>{{plant.row}}</span>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<span>Kolona</span>-->
+                            <!--<span>{{plant.col}}</span>-->
+                        <!--</div>-->
+
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</md-content>

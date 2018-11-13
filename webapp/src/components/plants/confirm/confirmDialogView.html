@@ -1,0 +1,27 @@
+<md-dialog aria-label="Remove confirm" md-theme="docs-dark">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Brisanje sadnice</h2>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <p>Da li ste sigurni da &#382;elite izbrisati sadnicu sa oznakom <u>{{vmConfirm.title}}</u> ?</p>
+            </div>
+        </md-dialog-content>
+
+            <md-dialog-actions layout="row">
+
+            <span flex></span>
+            <md-button ng-click="vmConfirm.cancel()" class="md-raised md-primary">
+                <span>Nazad</span>
+            </md-button>
+            <md-button ng-click="vmConfirm.remove()" class="md-raised md-warn">
+                <span>Bri&#353;i</span>
+            </md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>

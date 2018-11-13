@@ -1,0 +1,83 @@
+
+<md-toolbar layout="row" layout-padding
+        id="header">
+
+    <!--<div class="md-toolbar-tools">-->
+        <!--<h2 class="md-flex" translate translate-compile>{{title}}</h2>-->
+    <!--</div>-->
+
+    <div class="md-toolbar-tools">
+
+        <h2 class="md-flex">Prskalica</h2>
+
+        <!--    DB ReInit -->
+        <div flex></div>
+        <md-button class="md-icon-button md-accent" aria-label="clear"
+                   ng-click="vmHeader.wipeData()">
+            <md-icon md-svg-icon="assets/icons/ic_content_cut_white_18px.svg"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button md-accent" aria-label="init"
+                   ng-click="vmHeader.refreshData()">
+            <md-icon md-svg-icon="assets/icons/ic_replay_white_24px.svg"></md-icon>
+        </md-button>
+
+
+        <!--    Test    -->
+        <!--<md-button class="md-fab" aria-label="profile" ng-click="vm.profile()">-->
+        <!--<md-icon md-svg-src="assets/icons/ic_chevron_white_18px.svg"></md-icon>-->
+        <!--</md-button>-->
+
+        <!--<div flex="15"></div>-->
+        <!--<md-button class="md-icon-button md-accent" aria-label="Favorite">-->
+            <!--<md-icon md-svg-icon="assets/icons/ic_clear_black_24px.svg"></md-icon>-->
+        <!--</md-button>-->
+        <!--<div flex></div>-->
+        <!--<md-button class="md-icon-button md-accent" aria-label="Favorite">-->
+            <!--<md-icon md-svg-icon="assets/icons/ic_menu_white_18px.svg"></md-icon>-->
+        <!--</md-button>-->
+        <!--<div flex></div>-->
+        <!--<md-button class="md-icon-button md-accent" aria-label="Favorite">-->
+            <!--<md-icon md-svg-icon="assets/icons/ic_translate_white_24px.svg"></md-icon>-->
+        <!--</md-button>-->
+        <!--<div flex></div>-->
+        <!--<md-button class="md-icon-button md-accent" aria-label="Favorite">-->
+            <!--<md-icon md-svg-icon="assets/icons/ic_view_quilt_white_18px.svg"></md-icon>-->
+        <!--</md-button>-->
+
+    </div>
+
+    <!--<md-button md-no-ink class="md-primary"-->
+               <!--ng-click="addLink()"-->
+               <!--ng-disabled="selected.length<1">Add Link-->
+    <!--</md-button>-->
+
+    <!--<div flex></div>-->
+    <!--<md-button aria-label="go to map" class="md-fab md-raised">-->
+        <!--<a ui-sref="home.map">-->
+            <!--<md-icon md-svg-src="assets/icons/ic_add_white_24px.svg" aria-label="go to map"></md-icon>-->
+        <!--</a>-->
+    <!--</md-button>-->
+
+    <!--<md-input-container md-no-float class="md-block">-->
+        <!--&lt;!&ndash;<label>Search</label>&ndash;&gt;-->
+        <!--<md-icon md-svg-src="assets/icons/inkoop/ic_search_white_18px.svg"></md-icon>-->
+        <!--<input type="text" ng-model="searchQuery" placeholder="Search categories">-->
+    <!--</md-input-container>-->
+
+
+
+    <!--<md-input-container layout="row" layout-align="end end" id="locale">-->
+        <!--<md-select ng-model="language.akronim" aria-label="language">-->
+            <!--<md-option layout="row"-->
+                       <!--ng-repeat="language in languages"-->
+                       <!--value="{{language.akronim}}"-->
+                       <!--ng-click="changeLanguage(language.akronim)"-->
+                       <!--ng-selected="{{language.akronim == 'sr'}}">-->
+
+                <!--<img class="imgLocale" ng-src="{{language.image}}"/>-->
+
+            <!--</md-option>-->
+        <!--</md-select>-->
+    <!--</md-input-container>-->
+
+</md-toolbar>

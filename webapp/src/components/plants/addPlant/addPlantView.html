@@ -1,0 +1,156 @@
+
+
+<md-dialog aria-label="Add Plant" md-theme="docs-dark" id="addPlant" flex="60">
+    <form layout="column" name="plantForm" novalidate>
+
+        <md-toolbar layout-padding>
+            <div class="md-toolbar-tools">
+                <h2>{{vmPlant.plantTitle}}</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="vmPlant.cancel()">
+                    <md-icon md-svg-src="assets/icons/inkoop/ic_clear_white_18px.svg" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+            <div class="md-toolbar-tools">
+                <p>{{vmPlant.step}}/5</p>
+                &nbsp;
+                <p>{{vmPlant.stepTitle[vmPlant.step-1]}}</p>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content flex>
+
+            <!--    Type  -->
+            <div class="ng-enter ng-leave" ng-show="vmPlant.step==1">
+                <md-grid-list md-cols-gt-lg="6" md-cols-gt-md="5" md-cols-gt-sm="4" md-cols="3" md-row-height="1:1" md-gutter="4px">
+                    <md-grid-tile ng-repeat="type in vmPlant.types track by $index"
+                                  ng-click="vmPlant.chooseType(type)">
+                        <md-icon md-svg-icon="{{type.icon}}.svg"></md-icon>
+                        <md-grid-tile-footer>
+                            <h3>{{type.name}}</h3>
+                        </md-grid-tile-footer>
+                    </md-grid-tile>
+                    <md-grid-tile ng-click="vmPlant.openSidenav('rightType')">
+                        <md-icon md-svg-icon="assets/icons/ic_fingerprint_white_24px.svg"></md-icon>
+                        <md-grid-tile-footer>
+                            <h3>Dodaj novu vocku</h3>
+                        </md-grid-tile-footer>
+                    </md-grid-tile>
+                </md-grid-list>
+            </div>
+
+            <!--    Sort  -->
+            <div class="ng-enter ng-leave" ng-show="vmPlant.step==2">
+                <md-grid-list md-cols-gt-lg="6" md-cols-gt-md="5"  md-cols-gt-sm="4" md-cols="3" md-row-height="1:1" md-gutter="4px">
+                    <md-grid-tile ng-repeat="sort in vmPlant.sorts track by $index"
+                                  ng-click="vmPlant.chooseSort(sort)">
+                        <md-icon md-svg-icon="{{sort.icon}}.svg"></md-icon>
+                        <md-grid-tile-footer>
+                            <h3>{{sort.name}}</h3>
+                        </md-grid-tile-footer>
+                    </md-grid-tile>
+                    <md-grid-tile ng-click="vmPlant.openSidenav('rightSort')">
+                        <md-icon md-svg-icon="assets/icons/ic_fingerprint_white_24px.svg"></md-icon>
+                        <md-grid-tile-footer>
+                            <h3>Dodaj novu sortu</h3>
+                        </md-grid-tile-footer>
+                    </md-grid-tile>
+                </md-grid-list>
+            </div>
+
+            <!--    Label  -->
+            <div class="ng-enter ng-leave" ng-show="vmPlant.step==3"
+                 layout-margin layout-padding
+                    id="viewLabel">
+                <div>
+                    <md-input-container>
+                        <label>Oznaka sadnice</label>
+                        <input type="text" ng-model="vmPlant.plant.label"
+                               id="plantLabel"
+                               name="plantLabel"
+                               required minlength="3">
+                        <div class="hint">Ime (oznaka) po kojoj se prepoznaje ova sadnica.</div>
+                    </md-input-container>
+                    <div layout="row">
+                        <md-input-container id="numberOfPlants">
+                            <label>Broj sadnica</label>
+                            <input flex type="number" aria-label="Number of plants"
+                                   ng-model="vmPlant.plant.numberOfPlants"
+                                   minlength=1 maxlength=99>
+                        </md-input-container>
+                        <md-icon md-svg-src="assets/icons/ic_info_white_18px.svg" class="icon">
+                            <md-tooltip md-direction="bottom" layout-wrap>Ako pravite vise sadnica odjednom koje se prepoznaju po istom imenu; upisite ime a brojevi ce se dodati automatski za svaku sadnicu.</md-tooltip>
+                        </md-icon>
+                        <div flex></div>
+                        <md-button aria-label="Next step" class="md-fab md-primary"
+                                   ng-click="vmPlant.nextStep()"
+                                   ng-disabled="plantForm.plantLabel.$error.required || plantForm.plantLabel.$error.minlength">
+
+                            <md-icon md-svg-src="assets/icons/ic_chevron_right_white_18px.svg"></md-icon>
+                        </md-button>
+                    </div>
+                </div>
+            </div>
+
+            <!--    Date  -->
+            <div class="ng-enter ng-leave" ng-show="vmPlant.step==4"
+                 layout="column"
+                 layout-gt-sm="row"
+                 layout-padding layout-margin
+                    id="dates">
+
+
+
+                    <div>
+                        <h4>Zasad</h4>
+                        <md-datepicker ng-model="vmPlant.plant.plantingDate" md-placeholder="Enter date" md-open-on-focus></md-datepicker>
+                    </div>
+
+
+                    <md-button aria-label="next" class="md-fab md-primary"
+                               ng-click="vmPlant.nextStep()"
+                               ng-disabled="plantForm.$pristine">
+                        <md-icon md-svg-src="assets/icons/ic_chevron_right_white_18px.svg" aria-label="create"></md-icon>
+                    </md-button>
+
+            </div>
+
+            <!--    Notes  -->
+            <div class="ng-enter ng-leave" ng-show="vmPlant.step==5"
+                 layout-padding layout-margin
+                    style="display: flex">
+                <md-input-container class="md-block">
+                    <label for="beleske">Beleske</label>
+                    <textarea id="beleske"
+                              ng-model="vmPlant.plant.notes"
+                              md-maxlength="150"
+                              rows="5" md-select-on-focus></textarea>
+                </md-input-container>
+                <!--<md-button aria-label="next" class="md-fab md-primary"-->
+                           <!--ng-click="vmPlant.savePlant()">-->
+                    <!--<md-icon md-svg-src="assets/icons/ic_chevron_right_white_18px.svg" aria-label="create"></md-icon>-->
+                <!--</md-button>-->
+            </div>
+
+            <!--    New Type  -->
+            <div ng-include="'src/components/plants/addPlant/plantTypeView.html'"
+                 layout-fill></div>
+
+            <!--    New Sort  -->
+            <div ng-include="'src/components/plants/addPlant/plantSortView.html'"
+                 layout-fill></div>
+
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row" ng-show="vmPlant.step==5">
+            <span flex></span>
+            <md-button ng-click="vmPlant.cancel()" class="md-raised md-primary">
+                <span>Cancel</span>
+            </md-button>
+            <md-button ng-click="vmPlant.savePlant()" class="md-raised md-warn">
+                dodaj
+            </md-button>
+        </md-dialog-actions>
+
+    </form>
+</md-dialog>
